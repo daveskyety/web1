@@ -12,8 +12,8 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			width: 200px;
-			height: 200px;
+			width: 400px;
+			height: 400px;
 background-image: url("https://an2-img.amz.wtchn.net/image/v2/Ciw_TFVAE9Zd8azTEdXQhw.png?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKd0lqb2lMM1l5TDNOMGIzSmxMM1ZwYldGblpTOHhOamd6TWpjNE1ETTJOVFl3TlRjMk5UQTRJbjAuZDNFNU81ajZyaTl4WmJhcE5lQzFoUS14N29aY3lhTFBRSnhyQURxRHl5TQ&ts=1683278042	");
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -25,8 +25,8 @@ background-image: url("https://an2-img.amz.wtchn.net/image/v2/Ciw_TFVAE9Zd8azTEd
 			left: 50%;
 			background-image: url("https://www.pngplay.com/wp-content/uploads/2/Meteor-Transparent-Free-PNG.png");
 			transform: translate(-50%, -50%);
-			width: 200px;
-			height: 200px;
+			width: 300px;
+			height: 300px;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -60,7 +60,7 @@ document.getElementById("obstacle").style.display = "block";
 
     let obstacle = document.getElementById("obstacle");
 		let obstacleY = 0;
-		let obstacleSpeed = 15;
+		let obstacleSpeed = 19;
 
 		function moveObstacle() {
 			obstacleY += obstacleSpeed;
@@ -88,7 +88,7 @@ document.getElementById("obstacle").style.display = "block";
 			moveObstacle();
 			if (isCollide(car, obstacle)) {
 				clearInterval(intervalId);
-				alert("게임 오버!");
+				alert("충돌!");
 				window.location.reload();
 			}
 		}, 10);
